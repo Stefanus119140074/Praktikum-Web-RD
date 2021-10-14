@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+header{
+	background-color: orange;
+	font-family:times new roman,sans-serif;
+	font-size: 10 px;
+	color: white;
+
+}
+.logo{
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width:200 px;
+	height: auto;
+}
+.diri{
+	width: 50px;
+	height: 100px;
+}
+
+.menu{
+	background-color: darkred;
+	font-size: 25px;
+}
+.MainContent{
+background-color: grey;
+height: auto px;
+width: 60%;
+}
+.tulis{
+
+}
+header{
+color: white;
+}
+.body{
+	display: flex;
+	height: auto;
+	width: auto;
+}
+.Contentberita{
+	background-color: lightgreen;
+	height: auto px;
+    width: 40%;
+    color: white;
+}
+footer{
+	height: auto;
+	width: auto;
+	background-color: darkslategrey;
+	color: white;
+
+}
