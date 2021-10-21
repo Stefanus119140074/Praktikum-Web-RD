@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Praktikum Minggu 3</title>
+ 
+<script type="text/javascript">
+  function changeColor(warna) {
+if (warna.value == "black")
+{
+  document.body.style.backgroundColor = "black";
+  document.body.style.color="white";
+  }
+if (warna.value == "white")
+{
+  document.body.style.backgroundColor = "white";
+  document.body.style.color="black";
+  }
+
+if (warna.value == "Green")
+{
+  document.body.style.backgroundColor = "green";
+  document.body.style.color="yellow";
+  }
+}
+function changetext(p){
+  var x=document.getElementById("tulis")
+  if (p.value == "1")
+{
+  x.innerHTML ="The Yuheng of the Liyue Qixing. Keqing has much to say about Rex Lapis' unilateral approach to policymaking in Liyue,but in truth, gods admire skeptics such as her quite a lot ."
+    }
+if (p.value == "2")
+{
+ x.innerHTML ="One of the (Mighty and Illuminated Adepti) guarding Liyue, also heralded as the (Guardian yaksha). Despite his appearance as a young man, occasional legends about him have been documented in ancient books for thousands of years. He is especially fond of Wangshu Inn's Almond Tofu. The reason is that the dish tastes just like the(dreams) he used to devour. "
+  }
+
+if (p.value == "3")
+{
+  x.innerHTML =" Hú Táo is the 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs. She does her utmost to flawlessly carry out a person's last rites and preserve the world's balance of yin and yang. Aside from this, she is also a talented poet whose many."
+
+}
+}
+
+function faktorial(){
+
+var i, angka, faktor,l;
+faktor=1;
+angka=document.getElementById("number").value;
+for(i=1; i<=angka; i++)  
+{
+faktor= faktor*i;
+l=i;
+}
+document.getElementById("answer").innerHTML="The factorial of "+ l +" is: "+faktor;
+}
+
+</script>
+</head>
+<body>
+
+
+<form>
+ <label for="warna">Select Theme:</label>
+ <select id="warna" name="warna" onchange="changeColor(this)">
+   <option value="black">Black</option>
+   <option value="white">White</option>
+   <option value="Green">Green</option>
+ </select>
+ <br>
+</form>
+
+<h2><b>This is My Website</b></h2>
+
+<form>
+ <label for="character">Select Character:</label>
+ <select id="char" name="char" onchange="changetext(this)">
+   <option value="1">Keqing</option>
+   <option value="2">Xiao</option>
+   <option value="3">Hu tao</option>
+ </select>
+ <br>
+</form>
+
+<div id="tulis"></div>
+<br><br>
+<label>
+  Input Number :
+</label> <input id="number">
+<button onclick="faktorial()">Get Factorial</button>
+<p id="answer"></p>
+
+</body>
+</html>
